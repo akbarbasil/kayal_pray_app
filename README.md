@@ -4,8 +4,8 @@
 
 ## Features
 
-- **Accurate Prayer Times**: Provides daily prayer times and future prayer schedules.
-- **Custom Notifications**: Receive timely notifications for prayer times.
-- **Multi-language Support**: Available in English and Tamil.
-- **User-friendly Design**: Intuitive UI for easy navigation and usage.
-- **Offline Access**: View prayer times without an internet connection.
+- 📅 **Accurate Prayer Times**: Provides daily prayer times and future prayer schedules.
+- 🔔 **Custom Notifications**: Receive timely notifications for prayer times.
+- 🌐 **Multi-language Support**: Available in English and Tamil.
+- 🖥️ **User-friendly Design**: Intuitive UI for easy navigation and usage.
+- 📱 **Offline Access**: View prayer times without an internet connection.
