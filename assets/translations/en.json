@@ -1,0 +1,20 @@
+{
+  "noData": "NO DATA",
+  "language": "Change Language",
+  "select_language": "Select Language",
+  "next_date_tool_tip": "view future prayer times",
+  "fajr": "FAJR",
+  "duhur": "DUHUR",
+  "asr": "ASR",
+  "maghrib": "MAGHRIB",
+  "isha": "ISHA",
+  "monday": "Monday",
+  "tuesday": "Tuesday",
+  "wednesday": "Wednesday",
+  "thursday": "Thursday",
+  "friday": "Friday",
+  "saturday": "Saturday",
+  "sunday": "Sunday",
+  "close": "Close",
+  "notification_title": "Prayer Time"
+}

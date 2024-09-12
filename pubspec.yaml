@@ -1,0 +1,67 @@
+name: kayal_pray
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  shared_preferences:
+  intl:
+  google_fonts: ^6.1.0
+  sqflite:
+  shimmer:
+  url_launcher:
+  easy_localization:
+  font_awesome_flutter:
+  flutter_local_notifications:
+  store_redirect:
+  permission_handler:
+  provider:
+  flutter_native_splash:
+# RUN THIS COMMAND TO CHANGE ----> APP & PACKAGE NAME
+#  flutter pub global activate rename
+#  rename setAppName --targets ios,android,web,windows --value "Kayal Pray"
+#  rename setBundleId --targets ios,android,web,windows --value "com.basilcreations.kayal_pray"
+  rename:
+  package_info_plus:
+  fluttertoast:
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.10.0
+
+# flutter pub run flutter_launcher_icons:main
+flutter_icons:
+  android: "app_icon"
+  ios: true
+  web:
+    generate: true
+  windows:
+    generate: true
+  remove_alpha_ios: true
+  image_path: "assets/images/app_icon.png"
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/translations/
+
+
