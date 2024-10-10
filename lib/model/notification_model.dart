@@ -17,23 +17,22 @@ class NotificationHelper {
         ?.requestNotificationsPermission();
   }
 
-  showNotification(int id, String title, String body) async {
+  showNotification(String title, String body) async {
     const AndroidNotificationDetails _androidNotificationDetails = AndroidNotificationDetails(
       'Prayer_Alert',
       'Prayer Alert',
       importance: Importance.max,
       priority: Priority.high,
+      playSound: false,
       showWhen: false,
       ongoing: true,
       autoCancel: false,
     );
 
-    const NotificationDetails _notificationDetails = NotificationDetails(
-      android: _androidNotificationDetails,
-    );
+    const NotificationDetails _notificationDetails = NotificationDetails(android: _androidNotificationDetails);
 
     await flutterLocalNotificationsPlugin.show(
-      id,
+      0,
       title,
       body,
       _notificationDetails,

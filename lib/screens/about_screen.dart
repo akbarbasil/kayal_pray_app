@@ -1,12 +1,16 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:store_redirect/store_redirect.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:package_info_plus/package_info_plus.dart';
+
+import '../controller/controller.dart';
 
 class AboutScreen extends StatelessWidget {
-  static const routename = "AboutScreen";
+  static const routename = "/AboutScreen";
+
+  var _controller = Get.put(Controller());
 
   Future<void> _launchURL(context, link) async {
     try {
@@ -45,8 +49,10 @@ class AboutScreen extends StatelessWidget {
               children: [
                 Image.asset("assets/images/app_icon.png", width: 100),
                 SizedBox(height: 20),
+
+                // todo : name
                 Text(
-                  'Basil',
+                  'MAHADUM AKBAR BASIL',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -61,6 +67,8 @@ class AboutScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
+
+                // todo : contact information
                 Text(
                   'Contact Information:',
                   style: TextStyle(
@@ -69,6 +77,8 @@ class AboutScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 10),
+
+                // todo : email
                 Text(
                   'basilpublicmail@gmail.com',
                   style: TextStyle(
@@ -77,6 +87,8 @@ class AboutScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
+
+                // todo : about
                 Text(
                   'About the App:',
                   style: TextStyle(
@@ -85,6 +97,8 @@ class AboutScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 10),
+
+                // todo : description
                 Text(
                   'This app helps you stay on top of your daily prayer times. Never miss a prayer again with timely notifications and a user-friendly interface.',
                   style: TextStyle(
@@ -94,13 +108,12 @@ class AboutScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 30),
+
                 // todo : get the app
                 ElevatedButton(
                   onPressed: () async {
-                    var _info = await PackageInfo.fromPlatform();
-                    print(_info.packageName);
                     StoreRedirect.redirect(
-                      androidAppId: "${_info.packageName}",
+                      androidAppId: "${_controller.appPackageName.value}",
                     );
                   },
                   child: Text('Get the App'),
@@ -113,6 +126,7 @@ class AboutScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 15),
+
                 // todo : linked in profile
                 Container(
                   height: 40,

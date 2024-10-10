@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -384,4 +386,8 @@ class Props {
 toast(msg) {
   Fluttertoast.cancel();
   Fluttertoast.showToast(msg: msg);
+}
+
+customlogs(text) {
+  log(text.toString());
 }
